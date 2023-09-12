@@ -1,9 +1,14 @@
 nome_usuario = input("Digite seu nome: ")
 idade = input("Digite sua idade: ")
+print()
+print(50 * '-')
 
 # Se os dados digitados forem diferentes de vazio, ou seja, preenchidos
 if nome_usuario != '' and idade != '':
     print(f'Seu nome é {nome_usuario}')
+
+    ano_nascimento = 2023 - int(idade)
+    print(f'{ano_nascimento} é o ano em que você nasceu')
 
     nome_invertido = nome_usuario[::-1]
     print(f'Seu nome invertido é: {nome_invertido}')
@@ -17,11 +22,12 @@ if nome_usuario != '' and idade != '':
     print(f'Seu nome contém: {qtde_letras} letras')
 
     primeira_letra = nome_usuario[0]
-    print(f'A primeira letra do seu nome é {primeira_letra}')
+    print(f'A primeira letra do seu nome é: {primeira_letra}')
 
     ultima_letra = nome_usuario[-1]
-    print(f'A última letra do seu nome é {ultima_letra}')
+    print(f'A última letra do seu nome é: {ultima_letra}')
 
+    print()
     print(50 * '-')
     print()
 
